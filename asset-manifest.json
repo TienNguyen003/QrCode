@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/QrCode/static/css/main.93e36f96.css",
+    "main.js": "/QrCode/static/js/main.19c33985.js",
+    "static/js/787.1244a15c.chunk.js": "/QrCode/static/js/787.1244a15c.chunk.js",
+    "index.html": "/QrCode/index.html",
+    "main.93e36f96.css.map": "/QrCode/static/css/main.93e36f96.css.map",
+    "main.19c33985.js.map": "/QrCode/static/js/main.19c33985.js.map",
+    "787.1244a15c.chunk.js.map": "/QrCode/static/js/787.1244a15c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e36f96.css",
+    "static/js/main.19c33985.js"
+  ]
+}

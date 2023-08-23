@@ -1,5 +1,5 @@
 const routes = {
-    Home: '/',
+    Home: '/QrCode',
     Follow: '/Follow',
     Profile: '/:nickname',
     Upload: '/Upload',

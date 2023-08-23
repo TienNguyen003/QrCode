@@ -1,0 +1,149 @@
+.info {
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    width: 660px;
+    padding: 20px;
+    margin-left: 440px;
+    border-bottom: 1px solid rgba(223, 223, 225, 1);
+}
+.info-players {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// avatar
+.info-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(22, 35, 24, 0.09);
+    cursor: pointer;
+}
+
+// name
+.info-detail {
+    flex: 1;
+    margin-left: 20px;
+}
+.info-name {
+    display: flex;
+}
+.nickname {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 4px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.fullname {
+    margin-left: 10px;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    display: inline-block;
+    line-height: 28px;
+    cursor: pointer;
+}
+.description {
+    cursor: pointer;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: inline-block;
+    line-height: 28px;
+}
+.hastag {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// music
+.musics {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.info-music {
+    margin-left: 5px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// video
+.videos {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    cursor: pointer;
+}
+.main-video {
+    margin-top: 20px;
+    width: 260px;
+    height: 456px;
+}
+.interact-video {
+    margin-left: 20px;
+}
+.icon-video {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.icons {
+    width: 50px;
+    height: 50px;
+    padding: 13px 0 0 13px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+}
+.like {
+    text-align: center;
+}
+
+// controls
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+}
+.control-mute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.adjust-video {
+    margin-left: 80px;
+    width: 260px;
+
+    &:hover {
+        width: 260px;
+
+        .pause,
+        .unmute {
+            display: inline-block;
+        }
+    }
+}
+.pause,
+.unmute,
+.play,
+.mute {
+    display: none;
+}
+.adjust-volume {
+    width: 50px;
+    margin-top: 6px;
+}

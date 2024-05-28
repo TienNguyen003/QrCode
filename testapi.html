@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ArtPlayer Demo</title>
+	<meta charset="UTF-8" />
+
+	<style>
+		.artplayer-app {
+			width: 1024px;
+			height: 576px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="artplayer-app"></div>
+	<div id="dplayer"></div>
+	<a href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8081/login/oauth2/code/google&response_type=code
+	&client_id=583217970333-3nabs5lprpnahhnvsijtmg2jj0hac1cg.apps.googleusercontent.com&approval_prompt=force">Login With Gmail</a> 
+</body>
+<script src="hls.min.js"></script>
+<script src="DPlayer.min.js"></script>
+<script src="artplayer.js"></script>
+<script>
+	// anime
+	//https://new-consumet-api.vercel.app/meta/anilist/info/137653
+	//https://new-consumet-api.vercel.app/meta/anilist/watch/xian-ni-episode-1
+	//https://new-consumet-api.vercel.app/meta/anilist/advanced-search?page=1&provider=bilibili
+
+	// ophim
+	// https://ophim1.com/v1/api/tim-kiem?keyword= (tim kiem)
+	// https://ophim1.com/v1/api/danh-sach/ (danh sach vs phim moi phim le phim hoat hinh)
+
+
+	function playM3u8(video, url, art) {
+		if (Hls.isSupported()) {
+			if (art.hls) art.hls.destroy();
+			const hls = new Hls();
+			hls.loadSource(url);
+			hls.attachMedia(video);
+			art.hls = hls;
+			art.on('destroy', () => hls.destroy());
+		} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+			video.src = url;
+		} else {
+			art.notice.show = 'Unsupported playback format: m3u8';
+		}
+	}
+	var art = new Artplayer({
+		container: '.artplayer-app',
+		url: "https://v1.pinimg.com/videos/mc/hls/ea/78/27/ea78277189bb198827dc25442651a1c2.m3u8",
+		type: 'm3u8',
+		customType: {
+			m3u8: playM3u8,
+		},
+		poster: 'https://i.ytimg.com/vi/RxPxUwBP9PY/hqdefault.jpg',
+		volume: 0.5,
+		isLive: false,
+		muted: false,
+		autoplay: false,
+		pip: true,
+		autoSize: true,
+		autoMini: true,
+		screenshot: true,
+		setting: true,
+		loop: true,
+		flip: true,
+		playbackRate: true,
+		aspectRatio: true,
+		fullscreen: true,
+		fullscreenWeb: true,
+		subtitleOffset: true,
+		miniProgressBar: true,
+		mutex: true,
+		backdrop: true,
+		playsInline: true,
+		autoPlayback: true,
+		airplay: true,
+		theme: '#23ade5',
+		lang: navigator.language.toLowerCase(),
+		moreVideoAttr: {
+			crossOrigin: 'anonymous',
+		},
+		settings: [
+			{
+				width: 200,
+				html: 'Subtitle',
+				tooltip: 'Bilingual',
+				icon: '<img width="22" heigth="22" src="https://artplayer.org/assets/img/subtitle.svg">',
+				selector: [
+					{
+						html: 'Display',
+						tooltip: 'Show',
+						switch: true,
+						onSwitch: function (item) {
+							item.tooltip = item.switch ? 'Hide' : 'Show';
+							art.subtitle.show = !item.switch;
+							return !item.switch;
+						},
+					},
+				],
+				onSelect: function (item) {
+					art.subtitle.switch(item.url, {
+						name: item.html,
+					});
+					return item.html;
+				},
+			},
+		],
+		layers: [
+			{
+				html: '<img width="20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnYgu-fiAVDzKNsaLvgcHvsEtMnTaaQOBkQ&usqp=CAU">',
+				click: function () {
+					window.open('https://aimu.app');
+					console.info('You clicked on the custom layer');
+				},
+				style: {
+					position: 'absolute',
+					top: '20px',
+					right: '20px',
+					opacity: '.9',
+				},
+			},
+		],
+		quality: [
+			{
+				default: true,
+				html: '360',
+				url: "https://v1.pinimg.com/videos/mc/hls/ea/78/27/ea78277189bb198827dc25442651a1c2.m3u8",
+			},
+			{
+				html: '1080',
+				url: "https://v1.pinimg.com/videos/mc/hls/ea/78/27/ea78277189bb198827dc25442651a1c2.m3u8",
+			},
+		],
+		icons: {
+			loading: '<img src="https://artplayer.org/assets/img/ploading.gif">',
+			state: '<img width="150" heigth="150" src="https://artplayer.org/assets/img/state.svg">',
+			indicator: '<img width="16" heigth="16" src="https://artplayer.org/assets/img/indicator.svg">',
+		},
+	});
+</script>
+
+</html>

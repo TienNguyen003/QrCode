@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TienNguyen</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+</head>
+<style>
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        font-family: "Lucida Grande", arial, sans-serif;
+    }
+
+    #videoContainer {
+        height: 100%;
+        display: grid;
+        place-content: center;
+    }
+
+    .video-js {
+        width: 640px;
+        height: 360px;
+        max-width: 100vw;
+    }
+
+    .fullpage {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    #videoContainer:not(:has(*))::before {
+        content: "TienNguyen";
+        /* color: #39e75f; */
+        line-height: 360px;
+        text-align: center;
+    }
+
+    #videoContainer::after {
+        /* color: #cdcdcd; */
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    .container:hover .progress-bar,
+    .container:hover #nextTracks,
+    .container:hover #preTracks {
+        display: block !important;
+    }
+
+    .progress-bar {
+        position: absolute;
+        display: none;
+        left: 15px !important;
+        width: 90%;
+        height: 4px;
+        bottom: 10px;
+        cursor: pointer;
+    }
+
+    .pauseIcon {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        color: #fff;
+        transform: translate(-50%, -50%);
+    }
+
+    #nextTracks {
+        top: 40%;
+        left: 92%;
+        width: 20px;
+        height: 20px;
+    }
+
+    #preTracks {
+        /* top: 10px; */
+        left: 89%;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+    }
+
+    /* https://issues.chromium.org/issues/41493667 */
+    @media all and (display-mode: picture-in-picture) {
+        body {
+            background: #000;
+        }
+    }
+</style>
+
+<body>
+    <div id="videoContainer">
+        <video id="video" class="video-js" autoplay>
+            <source src="https://res.cloudinary.com/dwn20guz0/video/upload/v1716393655/samples/people/go.mp4" />
+        </video>
+    </div>
+    <!-- Nút để chuyển đổi chế độ PIP -->
+    <button id="pipButton">Toggle Picture-in-Picture</button>
+
+    <script>
+        const video = document.querySelector("#video");
+        const pipButton = document.getElementById('pipButton');
+        const randomPage = 11;
+
+        // Hàm để bắt đầu hoặc dừng Picture-in-Picture
+        async function togglePictureInPicture() {
+            const pipWindow = await documentPictureInPicture.requestWindow({
+                width: 300,
+                height: 480,
+            });
+
+            [...document.styleSheets].forEach((styleSheet) => {
+                try {
+                    const cssRules = [...styleSheet.cssRules].map((rule) => rule.cssText).join('');
+                    const style = document.createElement('style');
+
+                    style.textContent = cssRules;
+                    pipWindow.document.head.appendChild(style);
+                } catch (e) {
+                    const link = document.createElement('link');
+
+                    link.rel = 'stylesheet';
+                    link.type = styleSheet.type;
+                    link.media = styleSheet.media;
+                    link.href = styleSheet.href;
+                    pipWindow.document.head.appendChild(link);
+                }
+            });
+
+            video.classList.toggle("fullpage", true);
+
+            pipWindow.addEventListener("pagehide", (event) => {
+                const videoContainer = document.querySelector("#videoContainer");
+                const pipVideo = event.target.querySelector("#video");
+                pipVideo.classList.toggle("fullpage", false);
+                videoContainer.append(pipVideo);
+            });
+
+            const progressBar = document.createElement('progress');
+            progressBar.classList.add('progress-bar');
+            progressBar.value = 0;
+            progressBar.max = 100;
+
+            const container = document.createElement('div');
+            container.classList.add('container');
+            container.style.position = 'relative';
+
+            // Thêm video và progressBar vào phần tử mẹ
+            container.appendChild(video);
+            container.appendChild(progressBar);
+
+            pipWindow.document.body.appendChild(container);
+
+            progressBar.addEventListener('click', (event) => {
+                // Tính toán vị trí trong video mà người dùng đã click
+                const clickedPosition = (event.offsetX / progressBar.offsetWidth) * video.duration;
+
+                // Đặt thời gian của video (currentTime) thành vị trí tính toán
+                video.currentTime = clickedPosition;
+            });
+
+            // Cập nhật thanh thời gian chạy khi video thay đổi thời gian
+            video.addEventListener('timeupdate', () => {
+                if (isFinite(video.duration) && video.duration !== 0) {
+                    progressBar.value = (video.currentTime / video.duration) * 100;
+                }
+            });
+
+            let isVideoPlaying = true;
+
+            const pauseIcon = pipWindow.document.createElement('img');
+            pauseIcon.classList.add("pauseIcon");
+            pauseIcon.id = "pauseIcon";
+            pauseIcon.src = "https://pb48e9.p3cdn2.secureserver.net/wp-content/uploads/play-button-icon-white-8.png?time=1715753573"; // Đường dẫn đến biểu tượng dừng
+
+            container.appendChild(pauseIcon);
+
+            const nextTrack = pipWindow.document.createElement('img');
+            nextTrack.src = "https://cdn.iconscout.com/icon/free/png-256/free-up-arrow-339-1174909.png";
+            nextTrack.id = "nextTracks";
+            nextTrack.classList.add('pauseIcon');
+            container.appendChild(nextTrack);
+
+            nextTrack.addEventListener('click', () => {
+                fetchNextVideo(false)
+                pipWindow.document.querySelector("#pauseIcon").style.display = "none";
+            });
+
+            const preTrack = pipWindow.document.createElement('img');
+            preTrack.src = "https://cdn.iconscout.com/icon/free/png-256/free-up-arrow-339-1174909.png";
+            preTrack.classList.add('pauseIcon');
+            preTrack.id = "preTracks";
+            container.appendChild(preTrack);
+            preTrack.addEventListener('click', () => {
+                fetchNextVideo(true)
+                pipWindow.document.querySelector("#pauseIcon").style.display = "none";
+            });
+
+            video.addEventListener('click', () => {
+                const videoElement = pipWindow.document.querySelector("#video");
+                if (!pipWindow.document.pictureInPictureElement) {
+                    if (isVideoPlaying) {
+                        videoElement.pause(); // Tạm dừng video khi click vào trong chế độ Picture-in-Picture
+                        isVideoPlaying = false;
+                        pipWindow.document.querySelector("#pauseIcon").style.display = "inline";
+                    } else {
+                        videoElement.play(); // Tiếp tục phát video khi click lại
+                        isVideoPlaying = true;
+                        pipWindow.document.querySelector("#pauseIcon").style.display = "none";
+                    }
+                }
+            });
+        }
+
+        pipButton.addEventListener('click', togglePictureInPicture);
+
+
+        video.addEventListener('ended', () => {
+            fetchNextVideo(true);
+        });
+
+        let indexVideo = 0;
+        async function fetchNextVideo(isValid) {
+            if (isValid) indexVideo++;
+            else indexVideo--;
+            if (indexVideo < 0) indexVideo = 0;
+            const response = await fetch(`https://tiktok.fullstack.edu.vn/api/videos?type=for-you&page=${randomPage}`);
+            // randomPage = Math.floor(Math.random() * 23);
+            const data = await response.json();
+            if (data.data[indexVideo].file_url == null) indexVideo++
+            const nextVideoSrc = data.data[indexVideo].file_url; // Giả sử video tiếp theo có thể lấy từ dữ liệu trả về của API
+
+            // Cập nhật nguồn video và phát lại
+            video.src = nextVideoSrc;
+            video.play().catch(error => console.error('Error playing video:', error));
+
+            if (indexVideo == 14) indexVideo = -1
+        }
+    </script>
+</body>
+
+</html>

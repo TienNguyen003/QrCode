@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libaraly/grid.css">
+    <link rel="stylesheet" href="formacc.css">
+    <link rel="stylesheet" href="lazada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./img/z4109808811197_dc69824357dae21c65391eff883dd8f8-removebg-preview.png">
+    <title>Lazada</title>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="header__main">
+            <ul class="header__main-function">
+                <li class="header__main-item">
+                    <a href="#" class="header__main-item-link">
+                        <p class="header__main-name-link">SAVE MORE WITH THE APP
+                            <div class="header__downapp">
+                                <div class="header__downapp-des">
+                                    Download the app for the best experience
+                                </div>
+                                <div class="header__dowapp-info">
+                                    <div class="dowapp-info__qr">
+                                        <img src="./img/qrcode_www.facebook.com.png" class="info__qr-img">
+                                        <div class="dowapp-benefits">
+                                            <p class="detail__benefits">
+                                                Shop through our app to get:
+                                            </p>
+                                            <ul class="detail__benefits-des">
+                                                <li class="benefits-des-detail">Exclusive Vouchers</li>
+                                                <li class="benefits-des-detail">Better Deal</li>
+                                                <li class="benefits-des-detail">Promotions just for you</li>
+                                                <li class="benefits-des-detail">Always update first</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__down--how">
+                                    <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png?hl=vi" class="down--how__img google">
+                                    <img src="https://www.techhub.in.th/wp-content/uploads/2013/12/appstore.jpg" class="down--how__img store">
+                                </div>
+                                <p style="margin-top: 10px; text-align: center; color: red;">TienNguyen available</p>
+                            </div>
+                        </p>
+                    </a>
+                </li>
+                <li class="header__main-item">
+                    <a href="#" class="header__main-item-link">
+                        <p class="header__main-name-link">SELL WITH LAZADA</p>                        
+                    </a>
+                </li>
+                <li class="header__main-item">
+                    <a href="#" class="header__main-item-link">
+                        <p class="header__main-name-link">CUSTOMER CARE
+                            <div class="header__customer--care">
+                                <ul class="header__customer-function">
+                                    <li class="header__customer-function__info">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                        <p class="header__customer-fun__function">Support center</p>
+                                    </li>
+                                    <li class="header__customer-function__info">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <p class="header__customer-fun__function">Orders & Payments</p>
+                                    </li>
+                                    <li class="header__customer-function__info">
+                                        <i class="fa-solid fa-truck"></i>
+                                        <p class="header__customer-fun__function">Delivery & Pick-up</p>
+                                    </li>
+                                    <li class="header__customer-function__info">
+                                        <i class="fa-solid fa-box-open"></i>
+                                        <p class="header__customer-fun__function">Returns & Refunds</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </p>
+                    </a>
+                </li>
+                <li class="header__main-item">
+                    <a href="#" class="header__main-item-link">
+                        <p class="header__main-name-link">CHECK YOUR ORDER
+                            <div class="header__check-order">
+                                <p class="header__check-order__des">
+                                    Check your order
+                                </p>
+                                <form action="" class="form__order">
+                                    <label for="order__email">Please enter email address:</label>
+                                    <input type="text" id="order__email">
+                                    <label for="order__pass">Please enter order number:</label>
+                                    <input type="text" id="order__pass" placeholder="eg: 123456">
+                                </form>
+                                <p class="order__help">
+                                    If you have any other questions, <span class="click__help">Click here</span>
+                                </p>
+                            </div>
+                        </p>
+                    </a>
+                </li>
+                <li class="header__main-item login__acc">
+                    <a href="#" class="header__main-item-link">
+                        <p class="header__main-name-link" id="login">LOG IN</p>
+                    </a>
+                </li>
+                <li class="header__main-item register__acc">
+                    <a href="#" class="header__main-item-link">
+                        <p class="header__main-name-link" id="register">REGISTER</p>
+                    </a>
+                </li>
+                <li class="info__account">
+                    <img src="https://i.pinimg.com/564x/75/eb/7a/75eb7a9e1d36c3d07463097715439292.jpg" class="account__img">
+                    <p class="account__name">User</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid wide">
+        <div class="row sm-gutter">
+            <div class="col pc-12 navigation">
+                <img src="./img/z4109808811197_dc69824357dae21c65391eff883dd8f8-removebg-preview.png" class="nav__img">
+                <div class="nav__search">
+                    <input type="text" class="nav__search--input" placeholder="Search...">
+                    <i class="nav__icon-search fa-solid fa-magnifying-glass"></i>
+                </div>
+                <i class="fa-brands fa-opencart nav__icon-cart"></i>
+            </div>
+            <div class="col pc-12 slideShow">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="//icms-image.slatic.net/images/ims-web/96851066-1405-4314-88fb-687964909fe0.jpg" style="width:100%;">
+                    </div>
+                   
+                    <div class="mySlides fade">
+                      <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/a9de80d6-b4d0-4005-b037-e49a7600ecc3.jpg_2200x2200q90.jpg_.webp" style="width:100%">
+                    </div>
+                   
+                    <div class="mySlides fade">
+                      <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/73accfd5-de37-4c1a-bea5-1d1a79fb5f04.jpg_2200x2200q90.jpg_.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/47a43b39-479a-4cc8-8d4b-eb0a1c3ab9af.jpg_2200x2200q90.jpg_.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/b04bed0d-1be0-4c02-ab54-0f51e63870bc.jpg_2200x2200q90.jpg_.webp" style="width:100%">
+                    </div>
+                </div><br>
+                   
+                <div style="text-align:center" class="button__next-slide">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid wide">
+        <div class="row">
+            <div class="col pc-12">
+                <div class="features">
+                    <div class="col pc-3">
+                        <p class="feature">
+                            <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB15wgLWBr0gK0jSZFnXXbRRXXa.png" class="feature__img">
+                            LazMall
+                        </p>
+                    </div>
+                    <div class="col pc-3">
+                        <p class="feature">
+                            <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1UiNthUT1gK0jSZFhXXaAtVXa.png" class="feature__img">
+                            Discount code
+                        </p>
+                    </div>
+                    <div class="col pc-3">
+                        <p class="feature">
+                            <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1DahvhO_1gK0jSZFqXXcpaXXa.png" class="feature__img">
+                            Recharge & eVoucher
+                        </p>
+                    </div>
+                    <div class="col pc-3">
+                        <p class="feature">
+                            <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1CDWbBYj1gK0jSZFuXXcrHpXa.png" class="feature__img">
+                            LazGlobal
+                        </p>
+                    </div>
+                </div>
+            </div>   
+            
+            <!-- deal quick -->
+            <div class="col pc-12">
+                <p class="deal--quick">Lightning Deal</p>
+            </div>
+            <div class="col pc-12">
+                <div class="products__deal--quick">
+                    <p class="products__onsell">Đang bán</p>
+                    <div class="products__timeSell">
+                        <p class="products__endsin">Kết thúc trong</p>
+                        <div class="timeSell-hour">
+                            <span class="timeSell__timeHo"></span>
+                        </div>:
+                        <div class="timeSell-minute">
+                            <span class="timeSell__timeMn"></span>
+                        </div>:
+                        <div class="timeSell-second">
+                            <span class="timeSell__timeSeco"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="products__sellAll">Mua toàn bộ sản phẩm</a>
+                </div>
+            </div>
+            <div class="col pc-12">
+                <div class="products__deal">
+                    <div class="row">
+                        <div class="col pc-2">
+                            <div class="product">
+                                <img src="https://cf.shopee.vn/file/b4a70224e751880406adcd63f57ff3f3" class="product__img">
+                                <div class="product__info">
+                                    <p class="product__name">
+                                        Giày thể thao Ulzzang da mềm , năng động trẻ trung hot trend đẹp.
+                                    </p>
+                                    <div class="product__price">
+                                        <p class="product__price-current">195.000 ₫</p>
+                                        <p class="product__price-old"><span class="price-old--dell">229.000 ₫</span> 25%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="product">
+                                <img src="https://vn-live-01.slatic.net/p/4300aaa52066b7293b1ef523e198f16d.jpg" class="product__img">
+                                <div class="product__info">
+                                    <p class="product__name">
+                                        Giày Thể Thao TT03030 JUNO.
+                                    </p>
+                                    <div class="product__price">
+                                        <p class="product__price-current">420.000 ₫</p>
+                                        <p class="product__price-old"><span class="price-old--dell">655.000 ₫</span> -36%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="product">
+                                <img src="https://salt.tikicdn.com/ts/product/f2/2c/91/f4814df9eb5fcacc9a6c8de514914d6e.jpg" class="product__img">
+                                <div class="product__info">
+                                    <p class="product__name">
+                                        Giày Thể Thao Nam MENDO, Giày Thể Thao Phong Cách Đường Phố, Mẫu Bán Chạy 2022 - G5391.
+                                    </p>
+                                    <div class="product__price">
+                                        <p class="product__price-current">284.000 ₫</p>
+                                        <p class="product__price-old"><span class="price-old--dell">500.000 ₫</span> -43%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="product">
+                                <img src="https://salt.tikicdn.com/ts/product/c6/1a/d9/c47094b5bb2c4b1d1823438444c3ca98.jpg" class="product__img">
+                                <div class="product__info">
+                                    <p class="product__name">
+                                        Giày thể thao nữ Ulzzang AIR hồng đỗ.
+                                    </p>
+                                    <div class="product__price">
+                                        <p class="product__price-current">148.710 ₫</p>
+                                        <p class="product__price-old"><span class="price-old--dell">179.889 ₫</span> -17%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="product">
+                                <img src="https://lzd-img-global.slatic.net/g/p/0ae9851311d8707dfff0a005e80ccbf4.jpg_720x720q80.jpg_.webp" class="product__img">
+                                <div class="product__info">
+                                    <p class="product__name">
+                                        Giày air Jodan 1 high panda dễ phối đồ cực hot.
+                                    </p>
+                                    <div class="product__price">
+                                        <p class="product__price-current">159.000 ₫</p>
+                                        <p class="product__price-old"><span class="price-old--dell">259.000 ₫</span> -39%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="product">
+                                <img src="https://img.bestdealplus.com/ae04/kf/Had2ef5a81676447082b64e0124b0c0e5u.jpg" class="product__img">
+                                <div class="product__info">
+                                    <p class="product__name">
+                                        Giày nữ da cổ thấp đế độn, thời trang kiểu dáng basic chất liệu da PU - GD02.
+                                    </p>
+                                    <div class="product__price">
+                                        <p class="product__price-current">175.000 ₫</p>
+                                        <p class="product__price-old"><span class="price-old--dell">350.000 ₫</span> -50%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- lazmall -->
+            <div class="col pc-12">
+                <div class="product__lazmall">
+                    <div class="row">
+                        <div class="col pc-10">
+                            <p class="deal--lazmall">LazMall</p>
+                        </div>
+                        <div class="deal--lazmall__seemore col pc-2">
+                            <p class="lazmall__seemore">See more</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col pc-12">
+                <div class="list__products-lazmall">
+                    <div class="row">
+                        <div class="col pc-2">
+                            <div class="list__product-lazmall">
+                                <div class="products__lazmall-imgs">
+                                    <img src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127" class="products__lazmall-img">
+                                    <img src="https://i.pinimg.com/564x/b1/54/b7/b154b76e5d0dbf6eb8e7e2d3e9aec3fa.jpg" class="products__lazmall-img--extra">
+                                </div>
+                                <p class="products__lazmall-shop-name">Thao Nguyen Shop</p>
+                                <p class="products__lazmall-name">Thao Nguyen Shop</p>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="list__product-lazmall">
+                                <div class="products__lazmall-imgs">
+                                    <img src="https://i.pinimg.com/564x/62/d1/4d/62d14d82a95e835bf82b9330b28a71ab.jpg" class="products__lazmall-img">
+                                    <img src="https://i.pinimg.com/564x/75/eb/7a/75eb7a9e1d36c3d07463097715439292.jpg" class="products__lazmall-img--extra">
+                                </div>
+                                <p class="products__lazmall-shop-name">Jiashen Hia</p>
+                                <p class="products__lazmall-name">Jiashen Hia</p>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="list__product-lazmall">
+                                <div class="products__lazmall-imgs">
+                                    <img src="https://i.pinimg.com/564x/47/c7/d2/47c7d272575c4abecdd51fbf3ec4783f.jpg" class="products__lazmall-img">
+                                    <img src="https://i.pinimg.com/564x/78/0a/10/780a10bb3ccd493bd3afdb390e7a2ec0.jpg" class="products__lazmall-img--extra">
+                                </div>
+                                <p class="products__lazmall-shop-name">ᴛʜɪɴɢs</p>
+                                <p class="products__lazmall-name">ᴛʜɪɴɢs</p>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="list__product-lazmall">
+                                <div class="products__lazmall-imgs">
+                                    <img src="https://i.pinimg.com/564x/5b/78/6c/5b786c766ee2c73418695fbb96266e68.jpg" class="products__lazmall-img">
+                                    <img src="https://i.pinimg.com/564x/a3/d0/b4/a3d0b423ec3093f4418f2caeef26dc48.jpg" class="products__lazmall-img--extra">
+                                </div>
+                                <p class="products__lazmall-shop-name">Justina Xie</p>
+                                <p class="products__lazmall-name">Justina Xie</p>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="list__product-lazmall">
+                                <div class="products__lazmall-imgs">
+                                    <img src="https://i.pinimg.com/564x/3a/37/f8/3a37f806a76c1c3910f613c722b5cf02.jpg" class="products__lazmall-img">
+                                    <img src="https://i.pinimg.com/564x/d3/6c/d6/d36cd6b356de9644a0309bdf5823a3da.jpg" class="products__lazmall-img--extra">
+                                </div>
+                                <p class="products__lazmall-shop-name">Glasses</p>
+                                <p class="products__lazmall-name">Glasses</p>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="list__product-lazmall">
+                                <div class="products__lazmall-imgs">
+                                    <img src="https://i.pinimg.com/564x/8f/83/80/8f83801ac9ce3a69fab95f2126d960ca.jpg" class="products__lazmall-img">
+                                    <img src="https://i.pinimg.com/564x/d9/6c/dd/d96cddbfaac81f6a89e604d94a101af0.jpg" class="products__lazmall-img--extra">
+                                </div>
+                                <p class="products__lazmall-shop-name">Sara</p>
+                                <p class="products__lazmall-name">Sara</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- category list -->
+            <div class="col pc-12 ">
+                <p class="category">Category list</p>
+            </div>
+            <div class="col pc-12">
+                <div class="lists__category">
+                    <div class="row no-gutters">
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://salt.tikicdn.com/cache/w1200/ts/product/60/c6/76/046e9b61b097f29040ecc15eafe3176a.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày sneaker</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://vn-test-11.slatic.net/p/4289fa4f7f6a79aa716754bd15dfd630.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày nữ</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://ressmedia.com/wp-content/uploads/2021/07/ANH-4-26.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày nam</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://tamanh.net/wp-content/uploads/2021/08/chon-phong-nen-chup-anh-giay.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày da nam</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://cf.shopee.vn/file/a34b6e6ef9163cd458999bea119e6d32" class="list__category-img">
+                                <p class="list__category-des">Giày thể thao nữ</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://lzd-img-global.slatic.net/g/p/a7da236fbc9692a41eadae492465debf.jpg_720x720q80.jpg_.webp" class="list__category-img">
+                                <p class="list__category-des">Giày NY</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://media3.scdn.vn/img3/2019/10_16/NRfnRW_simg_de2fe0_500x500_maxb.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày sneaker MC</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://tronhouse.com/assets/data/editor/source/nen-chup-hinh-san-pham-giay-dep-theo-phuong-phap-nao/chup-quang-cao-san-pham.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày nike air force 1</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://cf.shopee.vn/file/f71acfc8c1e1d03f876205dec8775179" class="list__category-img">
+                                <p class="list__category-des">Adidas Prophere</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://htmediagroup.vn/wp-content/uploads/2021/07/Giay-nam-9.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày da nam</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://media3.scdn.vn/img3/2019/7_31/VVAfYF.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày MT375</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://studiovietnam.com/wp-content/uploads/2022/11/chan-di-giay-nu-dep-5.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày high heels</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://media3.scdn.vn/img4/2020/04_16/eoTiueT06KN7WpQa66rF.jpg" class="list__category-img">
+                                <p class="list__category-des">Giày BM553</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://img.websosanh.vn/v10/users/review/images/pds4rr1lljare/1569895906469_2944116.jpg?compress=85" class="list__category-img">
+                                <p class="list__category-des">High heels</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://cdn.dangcapphaidep.vn/wp-content/uploads/2017/11/nhung-mau-giay-cuoi-khong-bao-gio-loi-mot-2.jpg" class="list__category-img">
+                                <p class="list__category-des">Wedding shoes</p>
+                            </div>
+                        </div>
+                        <div class="col pc-1-5">
+                            <div class="list__category">
+                                <img src="https://cf.shopee.vn/file/sg-11134201-22110-413kocix4qjv12" class="list__category-img">
+                                <p class="list__category-des">Giày jordan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- exclusively for you -->
+            <div class="col pc-12">
+                <p class="exclusively__you">Exclusively for you</p>
+            </div>
+
+            <!-- Home sort + filter -->
+            <div class="col pc-12">
+                <div class="home-filter hide-on-mobile-tablet">
+                    <span class="home-filter__lable">Sắp xếp theo</span>
+                    <button class="home-filter__btn btn" data-type="popular">Phổ biến</button>
+                    <button class="home-filter__btn btn btn-primary" data-type="latest">Mới nhất</button>
+                    <button class="home-filter__btn btn" data-type="selling">Bán chạy</button>
+
+                    <div class="select-input">
+                        <span class="select-input__lable">Giá</span>
+                        <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                        
+                        <!-- List options -->
+                        <ul class="select-input__list">
+                            <li class="select-input__item">
+                                Giá: Thấp đến cao.
+                            </li>
+                            <li class="select-input__item">
+                                Giá: Cao đến thấp.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="home-filter__page">
+                        <span class="home-filter__page-num">
+                            <span class="home-filter__page-curent">1</span>/14
+                        </span>
+
+                        <div class="home-filter__page-control">
+                            <a class="home-filter__page-btn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            <a class="home-filter__page-btn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col pc-12">
+                <div class="exclusively__list">
+                    <div class="row">
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="popular">
+                                <img src="https://cf.shopee.vn/file/87cfed0ff059138701bc6ddcf3b3d6a3" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày thể thao mlb dơ hàng đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">888.888 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">8.888.888 ₫</span> 90%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="popular">
+                                <img src="https://lzd-img-global.slatic.net/g/ff/kf/S172f15cc60654d5ab00e8f961b65c439N.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày Vải Bố Mùa Xuân Hè 2022 Giày Trắng Lười Phong Cách Hàn Quốc Nữ Sinh.
+                                    </p>
+                                    <p class="product-info__price--new">135.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">250.000 ₫</span> 54%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="popular">
+                                <img src="https://lzd-img-global.slatic.net/g/p/b9c1637fc76d0194fa11213870bb9b6e.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày Thể Thao Sneaker Nike Af1 vẩy nâu.
+                                    </p>
+                                    <p class="product-info__price--new">156.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">199.000 ₫</span> 22%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="popular">
+                                <img src="https://lzd-img-global.slatic.net/g/p/df51b9ece92f591d5389aa866fcb2e19.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày da chelsea boots đen trơn MĐ G1071 thời trang.
+                                    </p>
+                                    <p class="product-info__price--new">284.900 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">569.000 ₫</span> 50%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="popular">
+                                <img src="https://lzd-img-global.slatic.net/g/p/b734f324d6551e03eeb9ee5165cf51a0.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày JODAN PARIS LOW, Nike Jordan1 Thấp Cổ.
+                                    </p>
+                                    <p class="product-info__price--new">225.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">450.000 ₫</span> 50%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="popular">
+                                <img src="https://lzd-img-global.slatic.net/g/p/95a21fd844264be188174ab8e7898caa.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày Thể Thao Nam Sneaker Hot Trend 2022 CanDyy Store.
+                                    </p>
+                                    <p class="product-info__price--new">295.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">455.000 ₫</span> 35%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="selling">
+                                <img src="https://vn-live-01.slatic.net/p/072375eb8479623c2db552da4e728bdd.jpg" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày Thể Thao Nam Nữ Đẹp Gía Rẻ, Giày Nữ, giày thể thao NIKE hoa cúc
+                                    </p>
+                                    <p class="product-info__price--new">209.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">299.000 ₫</span> 30%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="selling">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="selling">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="selling">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="selling">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively" data-status="selling">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively">
+                                <img src="https://salt.tikicdn.com/cache/w1200/ts/product/59/e3/f1/b99938464d3d0b32f8f36c434cb8abbe.jpg" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nam Sneaker phong cách thể thao sườn phối chữ AVI.
+                                    </p>
+                                    <p class="product-info__price--new">169.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">169.000 ₫</span> -0%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pc-2">
+                            <div class="exclusively">
+                                <img src="https://lzd-img-global.slatic.net/g/p/590a72af0b8c2de846c844e2db3dc198.jpg_720x720q80.jpg_.webp" class="exclusively__img">
+                                <div class="exclusively__product-info">
+                                    <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" class="product-info__img">
+                                    <p class="product-info__name-product">
+                                        Giày nữ giày thể thao uzlagg hoa anh đào phong cách trẻ trung phối đồ đẹp.
+                                    </p>
+                                    <p class="product-info__price--new">195.000 ₫</p>
+                                    <p class="product-info__price--old">
+                                        <span class="price-old--dell">229.000 ₫</span> 25%
+                                    </p>
+                                    <div class="exclusively__evaluate">
+                                        <div class="user__evaluate">
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                            <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                        </div>
+                                        <div class="user__purchases">(123)</div>
+                                        <div class="exclusi__location">Ho Chi Minh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col pc-12">
+                            <div class="more__products" style="margin-left: 5px;">
+                                <div class="row more__product"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col pc-12">
+                <div class="col pc-o-4 pc-4">
+                    <button class="exclusively__btn">See more</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="grid wide">
+        <div class="row">
+            <div class="col pc-4">
+                <img src="//icms-image.slatic.net/images/ims-web/c9a58d95-0cf3-4dee-85ff-cc41cd2e1f39.png" class="banner__img">
+            </div>
+            <div class="col pc-4">
+                <img src="//icms-image.slatic.net/images/ims-web/e12356fe-620a-47ec-8a35-1eb5d2586c17.png" class="banner__img">
+            </div>
+            <div class="col pc-4">
+                <img src="//icms-image.slatic.net/images/ims-web/b558b2e2-01ec-4d06-a00c-dac433e04a61.png" class="banner__img">
+            </div>
+
+            <div class="footer col pc-12">
+                <div class="row">
+                    <div class="col pc-3">
+                        <div class="footer__contact">Contact with Lazada</div>
+                        <ul class="footer__contact-list">
+                            <li class="contact-list__item">Hotline & Online Chat (24/7)</li>
+                            <li class="contact-list__item">Support center</li>
+                            <li class="contact-list__item">Delivery & Pick-up</li>
+                            <li class="contact-list__item">Import policy</li>
+                        </ul>
+                    </div>
+                    <div class="col pc-3">
+                        <div class="footer__contact">Lazada Việt Nam</div>
+                        <ul class="footer__contact-list">
+                            <li class="contact-list__item">About Lazada Vietnam</li>
+                            <li class="contact-list__item">Selling with Lazada</li>
+                            <li class="contact-list__item">Lazada Affiliate program</li>
+                            <li class="contact-list__item">Terms of use</li>
+                            <li class="contact-list__item">Privacy Policy</li>
+                            <li class="contact-list__item">Protecting intellectual property rights</li>
+                            <li class="contact-list__item">Dispute and complaint settlement process</li>
+                        </ul>
+                    </div>
+                    <div class="col pc-6">
+                        <div class="footer__downapp">
+                            <img src="https://lh3.googleusercontent.com/fnRiWalXYmQPGp71bZ7bJEeRYMID0jQiieTjXtP1jkSBr9f-MagS6EqOOAYPFJ9IqOp_4-gUiAN4KFKb01Nru27jfw=w128-h128-e365-rj-sc0x00ffffff" class="footer__down-img">
+                            <div class="footer__down-guide">
+                                <p class="down-guide-heart">Go where your heart beats</p>
+                                <p class="down-guide">Download App</p>
+                            </div>
+                            <div class="footer__downhere">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeLhigmFE1pScQTWcsUkXMSlYtgrX_UDLEfFZWMw7mWLPBRN1bjQRPW5C21r98STZcaZg&usqp=CAU" class="footer__downhere-img">
+                                <img src="https://i0.wp.com/s3.ap-southeast-1.amazonaws.com/techover.storage/wp-content/uploads/2020/03/28072743/google-play-download-android-app.png?fit=6138%2C2008&ssl=1" class="footer__downhere-img">
+                                <img src="https://learnmatch.net/wp-content/uploads/2020/10/huawei-appgallery.png" class="footer__downhere-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__overplay"></div>
+        <div class="modal__body">
+    
+            <!-- Registered form -->
+            <div class="auth-form register">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="tel" class="group__input phone__register" placeholder="Số điện thoại" pattern="[0]{1}[1-9]{1}[0-9]{1}.[0-9]{3}.[0-9]{4}" required>
+                            <i class="fas fa-check-circle circle__yes"></i>
+                            <i class="fas fa-exclamation-circle circle__no"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" placeholder="Mật khẩu" class="group__input pass__register">
+                            <i class="fas fa-check-circle circle__yes"></i>
+                            <i class="fas fa-exclamation-circle circle__no"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" placeholder="Nhập lại mật khẩu" class="group__input retypePass__register">
+                            <i class="fas fa-check-circle circle__yes"></i>
+                            <i class="fas fa-exclamation-circle circle__no"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <input type="checkbox" class="checkbox">
+                        <p class="auth-form__policy">Đồng ý việc bảo mật xác định mất luôn thông tin.</p>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn closeRes">TRỞ LẠI</button>
+                        <button class="btn btn--primary acc__register">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+    
+                <div class="auth-form__socicals">
+                    <a href="https://www.facebook.com/" class="btn btn--with-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <span class="btn__text">Kết nối với Facebook</span>
+                    </a>
+                    <a href="https://www.google.com/" class="btn btn--with-icon">
+                        <i class="fa-brands fa-google"></i>
+                        <span class="btn__text">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Login form -->
+            <div class="auth-form login">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn next__form">Đăng ký</span>
+                    </div>
+    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" placeholder="Số điện thoại" class="group__input number">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" placeholder="Mật khẩu" class="group__input pass">
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a class="auth-form__policy">Quên mật khẩu</a>
+                            <a class="auth-form__policy">Trợ giúp</a>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class=" btn btn2">TRỞ LẠI</button>
+                        <button class="btn btn--primary log--success">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+    
+                <div class="auth-form__socicals">
+                    <a href="https://www.facebook.com/" class="btn btn--with-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <span class="btn__text">Kết nối với Facebook</span>
+                    </a>
+                    <a href="https://www.google.com/" class="btn btn--with-icon">
+                        <i class="fa-brands fa-google"></i>
+                        <span class="btn__text">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product__details">
+        <div class="modal__overplaypr">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col pc-3">
+                        <img src="https://salt.tikicdn.com/cache/w1200/ts/product/59/e3/f1/b99938464d3d0b32f8f36c434cb8abbe.jpg" class="product__details__img">
+                    </div>
+                    <div class="col pc-6">
+                        <div class="product__des">
+                            Giày nam Sneaker phong cách thể thao sườn phối chữ AVI.
+                        </div>
+                        <div class="product__reviews">
+                            <div class="user__evaluate">
+                                <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                                <i class="fa-sharp fa-solid fa-star evaluate__icon"></i>
+                            </div>
+                            <p class="product__evaluate">3084 đánh giá</p>
+                            <div class="product__divider"></div>
+                            <p class="product__rep">265 câu hỏi đã trả lời</p>
+                        </div>
+                        <hr>
+                        <div class="products__price">
+                            <div class="products__price-new">195.000 ₫</div>
+                            <span class="products__price-old">195.000 ₫</span>&ensp;0%
+                            <div class="product__price-sale">
+                                <p class="product__price-endow">Ưu đãi</p>
+                                <div class="section-content">
+                                    <div class="tag-list">
+                                        <div class="promotion-tag-item  has-arrow">
+                                            <div class="tag-name">🏮ĐÓN TẾT QUÝ MÃO - NHẬN BÃO VOUCHER VNPT MONEY🏮</div>
+                                        </div>
+                                        <div class="promotion-tag-item  has-arrow tag-name2">
+                                            <div class="tag-name">Đơn hàng từ 29.000 ₫ </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="products__sizes">
+                            <p class="product__size">Kích cỡ</p>
+                            <div id="size">
+                                <span class="products__size" title="40">40</span>
+                                <span class="products__size" title="40">40</span>
+                                <span class="products__size" title="40">40</span>
+                                <span class="products__size" title="40">40</span>
+                                <span class="products__size" title="40">40</span>
+                            </div>
+                            <div class="buy__product">
+                                <div class="purchase btn--buy">Mua ngay</div>
+                                <div class="add__cart btn--buy">Thêm vào giỏ hàng</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pc-3">
+                        Làm sau!!!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="lazada.js"></script>
+</html>
